@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MUKAAB — Дизайн интерьеров и архитектура</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-left">
+    <a href="#" data-i18n="nav-portfolio">Портфолио</a>
+    <a href="#" data-i18n="nav-products">Изделия</a>
+    <a href="#" data-i18n="nav-about">О нас</a>
+    <a href="#" data-i18n="nav-services">Услуги</a>
+  </div>
+
+  <a href="#" class="nav-logo">
+    <img src="..." alt="MUKAAB">
+  </a>
+
+  <div class="nav-right">
+    <a href="#" data-i18n="nav-vacancies">Вакансии</a>
+    <a href="#" data-i18n="nav-contacts">Контакты</a>
+
+    <span class="nav-lang">
+      <span class="lang-btn active" onclick="changeLanguage('ru')">РУ</span>
+      <span class="nav-divider"> / </span>
+      <span class="lang-btn" onclick="changeLanguage('en')">EN</span>
+    </span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<!-- HERO -->
+<section class="hero" id="hero">
+
+  <!-- SLIDES -->
+  <div class="hero-slides" id="heroSlides">
+
+    <!-- Slide 1 -->
+    <div class="hero-slide"
+         style="background-image: url('1.png.jpg');">
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="hero-slide"
+         style="background-image: url('2.jpg');">
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="hero-slide"
+         style="background-image: url('3.jpg');">
+    </div>
+
+  </div>
+
+  <!-- ONE CONTENT -->
+  <div class="hero-content">
+
+    <h1 data-i18n="hero-title">
+      Создаём проекты как единое целое
+    </h1>
+
+    <p data-i18n="hero-sub">
+      Чистая эстетика, продуманные решения и внимание к каждой детали.
+    </p>
+
+    <a href="#"
+       class="btn-outline"
+       data-i18n="hero-btn">
+       Оставить заявку →
+    </a>
+
+  </div>
+
+  <!-- DOTS -->
+  <div class="hero-dots">
+
+    <div class="hero-dot active"
+         onclick="goSlide(0)">
+    </div>
+
+    <div class="hero-dot"
+         onclick="goSlide(1)">
+    </div>
+
+    <div class="hero-dot"
+         onclick="goSlide(2)">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<<section class="projects-section">
+
+  <!-- TITLE -->
+  <h2 class="section-title"
+      data-i18n="projects-heading">
+      Проекты
+  </h2>
+
+  <!-- GRID -->
+  <div class="projects-grid">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+
+      <img src="5.jpg" alt="Interior Design">
+
+      <div class="project-label"
+           data-i18n="label-interior">
+           Дизайн интерьера →
+      </div>
+
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+
+      <img src="2.jpg" alt="Products">
+
+      <div class="project-label"
+           data-i18n="label-products">
+           Изделия →
+      </div>
+
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card">
+
+      <img src="3.jpg" alt="Architecture">
+
+      <div class="project-label"
+           data-i18n="label-arch">
+           Архитектура →
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+
+  <div class="stat-item stat-divider">
+
+    <h2>150+</h2>
+
+    <p data-i18n="stat-projects">
+      Завершённых проектов
+    </p>
+
+  </div>
+
+  <div class="stat-item stat-divider">
+
+    <h2>10+</h2>
+
+    <p data-i18n="stat-years">
+      Лет опыта
+    </p>
+
+  </div>
+
+  <div class="stat-item stat-divider">
+
+    <h2>98%</h2>
+
+    <p data-i18n="stat-clients">
+      Довольных клиентов
+    </p>
+
+  </div>
+
+  <div class="stat-item">
+
+    <h2>24/7</h2>
+
+    <p data-i18n="stat-support">
+      Поддержка клиентов
+    </p>
+
+  </div>
+
+</section>
+
+<!-- STATS-SERVICES DIVIDER -->
+<div style="background:var(--black);padding:0;">
+
+  <div style="
+    height:1px;
+    background:linear-gradient(
+      to right,
+      transparent,
+      rgba(255,255,255,0.18) 15%,
+      rgba(255,255,255,0.18) 85%,
+      transparent
+    );
+    margin:0 40px;
+  "></div>
+
+</div>
+
+<!-- SERVICES -->
+<section class="services-section">
+
+  <!-- TITLE -->
+  <div class="services-header"
+       data-i18n="services-heading">
+       Услуги
+  </div>
+
+  <!-- GRID -->
+  <div class="services-grid">
+
+    <!-- CARD 1 -->
+    <div class="service-card"
+         style="background-image:url('1.png.jpg');">
+
+      <h3 data-i18n="svc-arch">
+        Архитектура
+      </h3>
+
+      <a href="#"
+         class="btn-service"
+         data-i18n="svc-btn">
+         Оставить заявку
+      </a>
+
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="service-card"
+         style="background-image:url('5.jpg');">
+
+      <h3 data-i18n="svc-interior">
+        Дизайн-проект интерьера
+      </h3>
+
+      <a href="#"
+         class="btn-service"
+         data-i18n="svc-btn">
+         Оставить заявку
+      </a>
+
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="service-card"
+         style="background-image:url('Open Fire - Röshults.jpg');">
+
+      <h3 data-i18n="svc-custom">
+        Индивидуальные изделия
+      </h3>
+
+      <a href="#"
+         class="btn-service"
+         data-i18n="svc-btn">
+         Оставить заявку
+      </a>
+
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="service-card"
+         style="background-image:url('3.jpg');">
+
+      <h3 data-i18n="svc-visual">
+        Визуализация
+      </h3>
+
+      <a href="#"
+         class="btn-service"
+         data-i18n="svc-btn">
+         Оставить заявку
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ABOUT + CONTACTS -->
+<div class="bottom-section">
+
+  <!-- ABOUT -->
+  <div class="about-col">
+
+    <p class="col-label"
+       data-i18n="about-label">
+       О нас
+    </p>
+
+    <h2 data-i18n="about-title">
+      Мы создаём эмоции через дизайн
+    </h2>
+
+    <p data-i18n="about-desc">
+      <strong>Mukaab</strong> — это команда опытных архитекторов и дизайнеров, специализирующихся на создании премиальных интерьеров. Каждый проект — это уникальное путешествие от идеи к реальности.
+    </p>
+
+    <ul class="checklist">
+
+      <li>
+        <span class="check-icon">✓</span>
+
+        <span data-i18n="check-1">
+          Индивидуальный подход к каждому клиенту
+        </span>
+      </li>
+
+      <li>
+        <span class="check-icon">✓</span>
+
+        <span data-i18n="check-2">
+          Гарантия качества и сроков выполнения
+        </span>
+      </li>
+
+      <li>
+        <span class="check-icon">✓</span>
+
+        <span data-i18n="check-3">
+          Использование экологичных материалов
+        </span>
+      </li>
+
+      <li>
+        <span class="check-icon">✓</span>
+
+        <span data-i18n="check-4">
+          Полный цикл от проектирования до сдачи
+        </span>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <!-- CONTACTS -->
+  <div class="contacts-col">
+
+    <!-- LEFT -->
+    <div class="contacts-info">
+
+      <p class="col-label"
+         data-i18n="contacts-label">
+         Контакты
+      </p>
+
+      <!-- PHONE -->
+      <div class="contact-block">
+
+        <p class="clabel"
+           data-i18n="clabel-phone">
+           Телефон
+        </p>
+
+        <a href="tel:+375339161111">
+          +375 (33) 916-11-11
+        </a>
+
+      </div>
+
+      <!-- EMAIL -->
+      <div class="contact-block">
+
+        <p class="clabel"
+           data-i18n="clabel-email">
+           Email
+        </p>
+
+        <a href="mailto:mukaabcompany@gmail.com">
+          mukaabcompany@gmail.com
+        </a>
+
+      </div>
+
+      <!-- ADDRESS -->
+      <div class="contact-block">
+
+        <p class="clabel"
+           data-i18n="clabel-address">
+           Адрес
+        </p>
+
+        <p data-i18n="address-val">
+          Минск, Беларусь
+        </p>
+
+      </div>
+
+      <!-- SOCIAL -->
+      <div class="contact-block">
+
+        <p class="clabel"
+           data-i18n="clabel-social">
+           Социальные сети
+        </p>
+
+        <div class="social-row">
+
+          <!-- socials remain same -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FORM -->
+    <div class="form-col">
+
+      <p class="col-label"
+         data-i18n="form-label">
+         Оставить заявку
+      </p>
+
+      <form class="contact-form"
+            onsubmit="return false;">
+
+        <input type="text"
+               data-i18n="ph-name"
+               placeholder="Имя">
+
+        <input type="tel"
+               data-i18n="ph-phone"
+               placeholder="Телефон">
+
+        <select>
+
+          <option value=""
+                  disabled
+                  selected
+                  data-i18n="opt-call">
+                  Позвонить
+          </option>
+
+          <option data-i18n="opt-call">
+            Позвонить
+          </option>
+
+          <option data-i18n="opt-write">
+            Написать
+          </option>
+
+        </select>
+
+        <div class="agree-row">
+
+          <input type="checkbox"
+                 id="agree"
+                 checked>
+
+          <label for="agree"
+                 data-i18n="agree-text">
+
+            В соответствии с политикой обработки персональных данных и соответствии
+            <a href="#">
+              политикой конфиденциальности
+            </a>
+
+          </label>
+
+        </div>
+
+        <button type="submit"
+                class="btn-submit"
+                data-i18n="btn-submit">
+
+                Отправить
+
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+
+  <p data-i18n="footer-copy">
+    © 2026 | ООО «Мукааб». УНП: 193790928
+  </p>
+
+  <a href="#"
+     data-i18n="footer-policy">
+
+     Политика конфиденциальности
+
+  </a>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</body>
+</html>
